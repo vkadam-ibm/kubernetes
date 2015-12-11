@@ -244,7 +244,7 @@ Kubernetes requires go version 1.2 or greater.
 Please install Go version 1.2 or later.
 
 EOF
-      exit 2
+      #exit 2
     fi
   fi
 

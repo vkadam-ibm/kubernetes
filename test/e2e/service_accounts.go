@@ -35,7 +35,7 @@ var _ = Describe("ServiceAccounts", func() {
 	f := NewFramework("svcaccounts")
 
 	It("should mount an API token into pods [Conformance]", func() {
-		var tokenName string
+		//var tokenName string
 		var tokenContent string
 		var rootCAContent string
 
@@ -53,7 +53,7 @@ var _ = Describe("ServiceAccounts", func() {
 			if len(secrets.Items) > 1 {
 				return false, fmt.Errorf("Expected 1 token secret, got %d", len(secrets.Items))
 			}
-			tokenName = secrets.Items[0].Name
+			//tokenName = secrets.Items[0].Name
 			tokenContent = string(secrets.Items[0].Data[api.ServiceAccountTokenKey])
 			rootCAContent = string(secrets.Items[0].Data[api.ServiceAccountRootCAKey])
 			return true, nil

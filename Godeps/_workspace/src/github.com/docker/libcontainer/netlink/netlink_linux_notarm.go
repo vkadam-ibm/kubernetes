@@ -1,4 +1,4 @@
-// +build !arm,!ppc64,!ppc64le
+// +build !arm,!s390x,!ppc64,!ppc64le
 
 package netlink
 
